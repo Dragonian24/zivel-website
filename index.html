@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="mainstyle.css">
+</head>
+<body> 
+    <div id="main_content">
+        <h1>The mask-image Property</h1>
+
+<h3>An SVG mask layer (formed as a triangle):</h3>
+<svg width="600" height="400">
+  <mask id="svgmask1">
+    <polygon fill="#ffffff" points="200 0, 400 400, 0 400"></polygon>
+  </mask>
+  <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="your-image.png" mask="url(#svgmask1)"></image>
+</svg>
+
+<h3>Original image:</h3>
+<img src="your-image.png" alt="Cinque Terre" width="600" height="400">
+
+    </div>
+    <div id="sidebar">
+        <div class="sidebar_content" id="progres_sidebar" mask="url(#svgmask1)" ></div>
+        <mask id="svgmask1">
+            <img class="sidebar_content" id="mask_sidebar" src="scroll.svg">
+        </mask>        
+    </div>
+</body>
+</html>

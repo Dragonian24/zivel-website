@@ -1,0 +1,42 @@
+body{
+    background-color: antiquewhite;
+    height: 5000px;
+    position: relative;
+    margin: 0;
+}
+
+#main_content{
+    background-color: brown;
+
+}
+
+#sidebar{
+    width: 4vw;
+    margin-left: 95vw;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#backgorund_sidebar{
+    position: absolute;
+    fill: black;
+    object-fit: scale-down;
+}
+
+#progres_sidebar{
+    background-color: olivedrab;  
+}
+
+#mask_sidebar{
+
+}
+
+.sidebar_content{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+}
