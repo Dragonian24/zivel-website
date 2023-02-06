@@ -51,7 +51,6 @@
           <h1>Kde...</h1>
           <p>
             Tábory probíhají u vodní nádrže Slezská Harta poblíž obce Roudno<br/>
-            Děti spí v podsadových stanech nebo indiánských tee-pee<br/> 
             Vyrážíme do okolí na výlety po souši i po vodě, například na blízkou vyhaslou sopku Velký Roudný<br/>
             <br/>
             GPS souřadnice tábora: 49.9096381N, 17.5081047E
@@ -66,23 +65,41 @@
               <li style="margin-left: 40px; margin-top: -10px;">19. - 25. 8.</li>
               <li style="margin-left: 40px;">25. - 31. 9.</li>
               <br/>
-              Přibližný čas příjezdu: 13-14 hodin<br/>
+              Přibližný čas příjezdu: 14-15 hodin<br/>
               Přibližný čas příjezdu: 9-10 hodin
             </p>
   
             <p style="font-size: 25px;">Přesné infomace o příjezdu a odjezdu zašleme v předtáborovém emailu</p>
           </div>
   
-          <button onclick="scrollFunction(location_about)" class="scroll_to_about brown right_sharp"><img src="arrow_light.png" class="arrow_down"> <p>O táborech?</p></button>
-          <button class="gallery_turn_on yellow left_sharp">GALERIE</button>
+          <button onclick="scrollFunction(location_about)" class="scroll_to_about brown right_sharp"><img src="arrow_light.png" class="arrow_down"> <p style="bottom: -15%; position: relative;">O táborech?</p></button>
+          <button onclick="window.alert('Na galerii stále pracujeme');" class="gallery_turn_on yellow left_sharp">GALERIE</button>
           
           
         </div>
         
         <div onclick="scrollFunction(location_about)" class="info_about brown right_sharp">
           <h1>O táborech...</h1>
-          <p>Děti přivezete na tábořiště, kde už na ně bude čekat zkušený personál, v průběhu prvního dne se děti ubytují. Poté co dorazí všichni účastníci zahrajeme si společně seznamovací hry. V průběhu dalších dní už také záleží na počasí, budeme společně hrát hry, plavat ve vodě, jezdit na lodích, večer sedět u ohně a zpívat a spoustu dalších aktivit. Pro děti je zajištěna strava 5x denně a v průběhu celého tábora nás bude provádět etapová hra *. Ke konci tábora si uděláme velký táborový oheň, na kterém si opečeme špekáčky a rozloučíme se. Poslední den bude vyhodnocení etapové hry, balení a vy si své ratolesti vyzvednete.
-          </p>
+          <div id="about" class="about_container">
+            <div class="about_grid img_div stany_img "><img class="about_img left_sharp" src="./photo/about/stent.png"></div>
+            <div class="about_grid stany_text"><h2>Základna</h2>
+              <p>děti na táboře spí v podsadových stanech nebo indiánských teepee</p></div>
+            <div class="about_grid img_div etapa_img"><img class="about_img left_sharp" src="./photo/about/szombie.png"></div>
+            <div class="about_grid etapa_text"><h2>Program</h2>
+              <p>rádi si hrajeme, ale i učíme nové dovednosti<br>
+              celým táborem vás provede etapová hra<br>
+              a jaké bude téma? to se dozvíte z nápověd, které budeme postupně zveřejňovat...</p></div>
+              <div class="about_grid img_div edu_img"><img class="about_img left_sharp" src="./photo/about/sedu.png"></div>
+            <div class="about_grid img_div kuchyne_img"><img class="about_img right_sharp" src="./photo/about/sfood.png"></div>
+            <div class="about_grid kuchyne_text"><h2>Stravování</h2>
+              <p>na táboře vaříme z kvalitních surovin<br>
+              máme sestavený vyvážený jidelníček<br>
+              strava 5x denně<br>
+              nápoje režim po celý den k dispozici</p></div>
+            <div class="about_grid img_div bezpecnost_img"><img class="about_img left_sharp" src="./photo/about/shurt.png"></div>
+            <div class="about_grid bezpecnost_text"><h2>Bezpečnost</h2></div>
+            <div class="about_grid img_div bezpecnost_lod_img"><img class="about_img right_sharp" src="./photo/about/sboat.png"></div>
+          </div>
         </div>
 
       </section>

@@ -13,19 +13,12 @@ body{
     position: relative;
 }
 
-#sidebar{
-    width: 3%;
-    margin-left: 97%;
-    height: 90vh;
-    position: fixed;
-    top: 5vh;
-    bottom: 5vh;
-    left: 0;
-}
-
-
 h1{
     font-size:  90px;
+}
+
+h2{
+    color: #FAD6A5;
 }
 
 #hero_section{
@@ -269,5 +262,59 @@ div#when_and_buttons{
 }
 
 .info_about{
-    margin: 50px 50px 50px 50px;
+    margin: 50px 0 50px 0;
+}
+
+
+.about_img{
+    height: 25vh;
+}
+
+.about_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.about_grid{
+    width: 25%;
+}
+
+#about div{
+    margin: 0;
+}
+.stany_img{
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.stany_text{
+    grid-row: 1;
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+.etapa_img{
+    grid-row: 2;
+}
+.etapa_text{
+    grid-row: 2;
+}
+.edu_img{
+    grid-row: 2;
+}
+.kuchyne_img{
+    grid-row: 3;
+}
+.kuchyne_text{
+    grid-row: 3;
+}
+.bezpecnost_img{
+    grid-row: 4;
+}
+.bezpecnost_text{
+    grid-row: 4;
+}
+.bezpecnost_lod_img{
+    grid-row: 4;
 }
