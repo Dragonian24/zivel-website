@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Tábory živel!</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Glory">
   <link rel="stylesheet" href="mainstyle.css">
 </head>
@@ -46,38 +48,41 @@
 
 
 
-      <section id="content_info">
-        <div onclick="scrollFunction(location_info)" id="info_where" class="right_sharp brown">
-          <h1>Kde...</h1>
-          <p>
-            Tábory probíhají u vodní nádrže Slezská Harta poblíž obce Roudno<br/>
-            Vyrážíme do okolí na výlety po souši i po vodě, například na blízkou vyhaslou sopku Velký Roudný<br/>
-            <br/>
-            GPS souřadnice tábora: 49.9096381N, 17.5081047E
-          </p>
-        </div>
-        
-        <div id="when_and_buttons">
-          <div onclick="scrollFunction(location_when)" id="info_when" class="left_sharp light">
-            <h1>kdy...</h1>
+      <section class="content_info">
+        <div class="when_and_where">
+          <div onclick="scrollFunction(location_info)" id="info_where" class="right_sharp brown">
+            <h1>Kde...</h1>
             <p>
-              V roce 2023 pořádáme 2 turnusy:
-              <li style="margin-left: 40px; margin-top: -10px;">19. - 25. 8.</li>
-              <li style="margin-left: 40px;">25. - 31. 9.</li>
+              Tábory probíhají u vodní nádrže Slezská Harta poblíž obce Roudno<br/>
+              Vyrážíme do okolí na výlety po souši i po vodě, například na blízkou vyhaslou sopku Velký Roudný<br/>
               <br/>
-              Přibližný čas příjezdu: 14-15 hodin<br/>
-              Přibližný čas příjezdu: 9-10 hodin
+              GPS souřadnice tábora: 49.9096381N, 17.5081047E
             </p>
-  
-            <p style="font-size: 25px;">Přesné infomace o příjezdu a odjezdu zašleme v předtáborovém emailu</p>
           </div>
-  
-          <button onclick="scrollFunction(location_about)" class="scroll_to_about brown right_sharp"><img src="arrow_light.png" class="arrow_down"> <p style="bottom: -15%; position: relative;">O táborech?</p></button>
-          <button onclick="window.alert('Na galerii stále pracujeme');" class="gallery_turn_on yellow left_sharp">GALERIE</button>
           
-          
+          <div id="when_and_buttons">
+            <div onclick="scrollFunction(location_when)" id="info_when" class="left_sharp light">
+              <h1>kdy...</h1>
+              <p>
+                V roce 2023 pořádáme 2 turnusy:
+                <li style="margin-left: 40px; margin-top: -10px;">19. - 25. 8.</li>
+                <li style="margin-left: 40px;">25. - 31. 9.</li>
+                <br/>
+                Přibližný čas příjezdu: 14-15 hodin<br/>
+                Přibližný čas příjezdu: 9-10 hodin
+              </p>
+    
+              <p style="font-size: 25px;">Přesné infomace o příjezdu a odjezdu zašleme v předtáborovém emailu</p>
+            </div>
+    
+            <button onclick="scrollFunction(location_about)" class="scroll_to_about brown right_sharp"><img src="arrow_light.png" class="arrow_down"> <p style="bottom: -15%; position: relative;">O táborech?</p></button>
+            <button onclick="window.alert('Na galerii stále pracujeme');" class="gallery_turn_on yellow left_sharp">GALERIE</button>
+            
+            
+          </div>
         </div>
-        
+
+
         <div onclick="scrollFunction(location_about)" class="info_about brown right_sharp">
           <h1>O táborech...</h1>
           <div id="about" class="about_container">

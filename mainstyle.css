@@ -1,3 +1,5 @@
+
+
 body{
     background-color: #3B492D;
     height: 5000px;
@@ -204,18 +206,19 @@ td{
     height: 0;
 }
 
-#content_info{
+.content_info{
     font-size: 30px;
     top: -1000px;
     position: relative;
 }
 
-#content_info div{
+.when_and_where div{
     padding: 20px;
     padding-left: 50px;
 }
 
-#content_info h1{
+
+.content_info h1{
     margin: 0px;
 }
 
@@ -263,20 +266,21 @@ div#when_and_buttons{
 
 .info_about{
     margin: 50px 0 50px 0;
+    padding: 50px;
 }
 
 
 .about_img{
-    height: 25vh;
+    height: 50vh;
 }
 
 .about_container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
 }
 
 .about_grid{
-    width: 25%;
 }
 
 #about div{
@@ -285,13 +289,11 @@ div#when_and_buttons{
 .stany_img{
     grid-row: 1;
     grid-column-start: 1;
-    grid-column-end: 3;
 }
 
 .stany_text{
     grid-row: 1;
-    grid-column-start: 4;
-    grid-column-end: 6;
+    grid-column-start: 2;
 }
 
 .etapa_img{
@@ -318,3 +320,16 @@ div#when_and_buttons{
 .bezpecnost_lod_img{
     grid-row: 4;
 }
+
+
+@media (max-width: 1350px) {
+    #nav_menu{
+     font-size: 35px;
+    }
+ }
+
+@media (max-width: 1150px) {
+    #nav_menu{
+     font-size: 25px;
+    }
+ }
