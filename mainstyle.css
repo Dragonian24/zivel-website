@@ -16,6 +16,7 @@ body{
 }
 
 h1{
+    color: #FCF8E8;
     font-size:  90px;
 }
 
@@ -233,7 +234,6 @@ td{
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
-    height: 450px;
 }
 
 .gallery_turn_on{
@@ -263,62 +263,71 @@ div#when_and_buttons{
     position: relative;
     top: 10%;
 }
-
 .info_about{
-    margin: 50px 0 50px 0;
+    margin-top: 50px;
     padding: 50px;
-}
-
-
-.about_img{
-    height: 50vh;
 }
 
 .about_container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.about_container img{
+    width: 50vh;
 }
 
-.about_grid{
+.safety_img, .game_img{
+    margin-left: auto;
+}
+.about_container h1{
+    color: #FAD6A5;
+    font-size: 50px;
+}
+.lide{
+    position: relative;
+    top: -1000px;
+    margin: 50px;
+}
+.lead_left{
+    grid-row: 1;
+}
+.lead_right{
+    grid-row: 1;
+}
+.lead_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.mat_img{
+    width: 20vw;
+}
+.rob_img{
+    width: 20vw;
 }
 
-#about div{
+.lead_container h2{
+    font-size: 60px;
+}
+.lide h1{
+    margin-bottom: 0;
+}
+.lide p{
+    font-size: 30px;
+    color: #FCF8E8;
     margin: 0;
 }
-.stany_img{
-    grid-row: 1;
-    grid-column-start: 1;
+.lead_container h3{
+    font-size: 30px;
+    color: #ECB390;
+    position: relative;
+    top: -50px;
 }
-
-.stany_text{
-    grid-row: 1;
-    grid-column-start: 2;
-}
-
-.etapa_img{
-    grid-row: 2;
-}
-.etapa_text{
-    grid-row: 2;
-}
-.edu_img{
-    grid-row: 2;
-}
-.kuchyne_img{
-    grid-row: 3;
-}
-.kuchyne_text{
-    grid-row: 3;
-}
-.bezpecnost_img{
-    grid-row: 4;
-}
-.bezpecnost_text{
-    grid-row: 4;
-}
-.bezpecnost_lod_img{
-    grid-row: 4;
+.lead_container li{
+    font-size: 30px;
+    color: #FCF8E8;
 }
 
 
