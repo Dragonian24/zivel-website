@@ -348,7 +348,17 @@ div#when_and_buttons{
 
 .prihlasit{
     margin-left: 50px;
+    margin-right: 50px;
     margin-bottom: 50px;
+    position: relative;
+    top: -900px;
+}
+.prihlasit p, .prihlasit li{
+    font-size: 20px;
+}
+.prihlasit h2{
+    font-size: 35px;
+    color:#86644F;
 }
 .join_header{
     padding: 5px 25px 5px 50px;
@@ -356,6 +366,37 @@ div#when_and_buttons{
 }
 .join_header h1{
     margin: 0;
+}
+.join_container{
+    display: grid;
+    grid-template-columns: 1f 1f;
+    grid-gap: 50px;
+}
+.join_info, .join_docs{
+    padding: 50px;
+    margin-top: 50px;
+    grid-row: 1;
+}
+.folow_container{
+    margin-top: 50px;
+    padding: 20px;
+}
+.folow_container table{
+    font-size: 25px;
+    color:#FAD6A5;
+    margin: 20px;
+    table-layout: auto;
+    width: 100%;
+}
+.prihlaska_down {
+    text-decoration: none;
+    color: #FCF8E8;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+.icons_img{
+    height: 25px;
 }
 @media (max-width: 1350px) {
     #nav_menu{
