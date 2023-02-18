@@ -329,8 +329,34 @@ div#when_and_buttons{
     font-size: 30px;
     color: #FCF8E8;
 }
+.lead_container ul{
+    width: 20vw;
+    position: relative;
+    top: -50px;
+    height: 15vw;
+}
+.mat_img, .rob_img{
+    position: absolute;
+    bottom: 0;
+}
+.rob_img{
+    right: 0;
+}
+.lead_left ul{
+    margin-left: 20vw;
+}
 
-
+.prihlasit{
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.join_header{
+    padding: 5px 25px 5px 50px;
+    width: 65vw;
+}
+.join_header h1{
+    margin: 0;
+}
 @media (max-width: 1350px) {
     #nav_menu{
      font-size: 35px;
