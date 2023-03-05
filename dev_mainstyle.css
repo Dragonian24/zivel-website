@@ -265,29 +265,7 @@ div#when_and_buttons{
     position: relative;
     top: 10%;
 }
-.info_about{
-    margin-top: 50px;
-    padding: 50px;
-}
 
-.about_container{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.about_container img{
-    width: 50vh;
-}
-
-.safety_img, .game_img{
-    margin-left: auto;
-}
-.about_container h1{
-    color: #FAD6A5;
-    font-size: 50px;
-}
 .lide{
     position: relative;
     top: -1000px;
@@ -411,3 +389,32 @@ div#when_and_buttons{
      font-size: 25px;
     }
  }
+
+ .info_about{
+    margin-top: 50px;
+    padding-top: 50px;
+}
+.info_about h1{
+    margin-bottom: 20px;
+}
+.info_about h2{
+    color: #FAD6A5;
+    font-size: 50px;
+    width: 30%;
+    position: absolute;
+    top: 0;
+}
+
+.info_text_div ul{
+    width: 50%;
+    margin-left: 30%;
+}
+.info_text_div{
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.info_first_img{
+    height: 400px;
+    width: 100%;
+}
