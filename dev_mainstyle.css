@@ -393,6 +393,8 @@ div#when_and_buttons{
  .info_about{
     margin-top: 50px;
     padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
 }
 .info_about h1{
     margin-bottom: 20px;
@@ -413,8 +415,24 @@ div#when_and_buttons{
     position: relative;
     margin-left: 50px;
     margin-right: 50px;
+    height: 400px;
 }
 .info_first_img{
     height: 400px;
-    width: 100%;
+}
+
+.info_img_move{
+    position: absolute;
+}
+.info_img_1{
+    top: 572px;
+}
+.info_img_2{
+    top: 972px;
+}
+.info_img_3{
+    top: 1372px;
+}
+.info_img_4{
+    top: 1772px;
 }

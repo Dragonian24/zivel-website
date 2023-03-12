@@ -113,7 +113,7 @@
 
       <div onclick="scrollFunction(location_about)" class="info_about brown right_sharp">
         <h1>O táborech...</h1>
-          <img class="info_first_img" src="./photo/about/DSC_0647 1.png">
+          <img class="info_first_img" src="./photo/about/about_wide_1.png">
           <div class="info_text_div camp_text">
             <h2>Táborová základna</h2>
             <ul>
@@ -173,7 +173,11 @@
               </li>
             </ul>
           </div>
-        </div>
+          <img class="info_img_move info_img_1" src="./photo/about/about_wide_2.png">
+          <img class="info_img_move info_img_2" src="./photo/about/about_wide_3.png">
+          <img class="info_img_move info_img_3" src="./photo/about/about_wide_4.png">
+          <img class="info_img_move info_img_4" src="./photo/about/about_wide_5.png">
+          <img class="info_first_img" src="./photo/about/about_wide_6.png">
       </div>
 
     </section>
@@ -289,25 +293,55 @@
     var boat_positon_state = 0;
     var water_bcg_hidden = true;
 
+
+    //classes and IDs
+    const hero_bcg = document.querySelector('#hero_main_background');
+    const hero_tent = document.querySelector('#hero_tent');
+    const hero_gradient = document.querySelector('#hero_gradient');
+    const menu_button = document.querySelector('#menu_button');
+    const nav_menu = document.querySelector('#nav_menu');
+    const boat_image = document.querySelector('.boat_image');
+    const menu_bcg = document.querySelector('.menu_bcg');
+    const water_bcg = document.querySelector('.water_bcg');
+
+    const info_img_1 = document.querySelector('.info_img_1');
+    const info_img_2 = document.querySelector('.info_img_2');
+    const info_img_3 = document.querySelector('.info_img_3');
+    const info_img_4 = document.querySelector('.info_img_4');
+    
+    const setInfo = function(posIndex){
+      switch(posIndex){
+        case 0:
+          info_img_1.style.add ('top: 572px');
+          info_img_2.style.add ('top: 972px');
+          info_img_3.style.add ('top: 1372px');
+          info_img_3.style.add ('top: 1772px');
+          break;
+        case 1:
+          info_img_1.style.add ('top: 972px');
+          info_img_2.style.add ('top: 1372px');
+          info_img_3.style.add ('top: 1772px');
+          info_img_4.style.add ('top: 0');
+          info_img_4.style.add ('bottom: 50px');
+          break;
+        case 2:
+          info_img_1.style.add ('top: 572px');
+          info_img_2.style.add ('top: 1372px');
+          info_img_3.style.add ('top: 1772px');
+          info_img_4.style.add ('top: 0');
+          info_img_4.style.add ('bottom: 50px');
+          break;
+        case 3:
+          break;
+      }
+    }
+
+
     window.addEventListener('scroll', function (e) {
-
-      //classes and IDs
-      const hero_bcg = document.querySelector('#hero_main_background');
-      const hero_tent = document.querySelector('#hero_tent');
-      const hero_gradient = document.querySelector('#hero_gradient');
-      const menu_button = document.querySelector('#menu_button');
-      const nav_menu = document.querySelector('#nav_menu');
-      const boat_image = document.querySelector('.boat_image');
-      const menu_bcg = document.querySelector('.menu_bcg');
-      const water_bcg = document.querySelector('.water_bcg');
-
 
       var scrolled = window.pageYOffset;
 
       console.log(scrolled);
-
-
-
 
       //menu and hero scroll
       var hero_bcg_rate = scrolled * -3;
